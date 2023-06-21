@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>newTech - Admin Panel</title>
+    <link rel="icon" href="resources/newTechIcon.png">
+
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+
+            <!--header-->
+            <div style="border-bottom: solid 1px darkgray;" class="col-12">
+                <div class="row">
+                    <div class="col-12 col-lg-2 offset-lg-5">
+                        <img class="offset-1" width="150" src="resources/newTechTransparent.png" />
+                        <p style="font-family: 'Quicksand'; font-size: 19px;" class="mt-2">Your Trusted Gadget Store</p>
+                    </div>
+
+                    <div class="col-1 offset-4 mt-4 dropdown">
+                        <div class="row">
+                            <button style="border: none; background-color:white;" class="dropdown-toggle"
+                                data-bs-toggle="dropdown"><img width="35" src="resources/my_profile.svg" /></button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="adminLogin.html">Sign In / Sign Up</a></li>
+                                <li><a class="dropdown-item" href="#">My Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--header-->
+
+            <!--content-->
+            <div style="border-bottom: solid 1px;" class="col-12 mt-5">
+                <div class="row">
+                    <div style="border-right: solid 2px;" class="col-12 col-lg-2">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <button class="btn5" onclick="document.location='adminPanel.html'" style="border: none; background-color: white;">Dashboard</button>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-5">
+                                <div class="row">
+                                    <button class="btn5" onclick="document.location='productAdding&Update.html'" style="border: none; background-color: white;">Product
+                                        Adding</button>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-5">
+                                <div class="row">
+                                    <button class="btn5" onclick="document.location='productAdding&Update.html'" style="border: none; background-color: white;">Product
+                                        Update</button>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-5">
+                                <div class="row">
+                                    <button class="btn5" onclick="document.location='manageProducts.html'" style="border: none; background-color: white;">Manage
+                                        Products</button>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-5 mb-3">
+                                <div class="row">
+                                    <button class="btn5" onclick="document.location='manageProducts.html'" style="border: none; background-color: white;">Manage
+                                        Users</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-9">
+                        <div class="row">
+                            <div style="border: solid 1px; background-color: rgb(127, 246, 246);" class="col-2 offset-lg-1 text-center d1">
+                                <div class="row">
+                                    <span>Customers</span>
+                                    <span>50</span>
+                                </div>
+                            </div>
+
+                            <div style="border: solid 1px;" class="col-2 offset-lg-1 text-center d1">
+                                <div class="row">
+                                    <span>Products</span>
+                                    <span>150</span>
+                                </div>
+                            </div>
+
+                            <div style="border: solid 1px; background-color: rgb(251, 223, 181);" class="col-2 offset-lg-1 text-center d1">
+                                <div class="row">
+                                    <span>Orders</span>
+                                    <span>100</span>
+                                </div>
+                            </div>
+
+                            <div style="border: solid 1px;" class="col-2 offset-lg-1 text-center d1">
+                                <div class="row">
+                                    <span>Sell Orders</span>
+                                    <span>500</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-9 offset-lg-2 mt-5">
+                            <div class="row">
+                                <div style="border: solid 1px; background-color: greenyellow;" class="col-3 offset-lg-1 text-center d1">
+                                    <div class="row">
+                                        <span>Daily Income</span>
+                                        <span>Rs. 75,000/=</span>
+                                    </div>
+                                </div>
+
+                                <div style="border: solid 1px;" class="col-3 offset-lg-1 text-center d1">
+                                    <div class="row">
+                                        <span>Monthly Income</span>
+                                        <span>Rs. 150,000/=</span>
+                                    </div>
+                                </div>
+
+                                <div style="border: solid 1px; background-color: rgb(158, 83, 227); color: white;" class="col-3 offset-lg-1 text-center d1">
+                                    <div class="row">
+                                        <span>Yearly Income</span>
+                                        <span>Rs. 25,021,500/=</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="border: solid 1px; background-color: rgb(255, 210, 76);"
+                            class="col-6 offset-lg-3 mt-5 text-center d1">
+                            <div class="row">
+                                <span>Total Price</span>
+                                <span>Rs. 25,861,250/=</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 offset-lg-1 mt-4 mb-4">
+                <div class="row">
+                    <div class="col-1 mt-1 text-center">
+                        <div class="row">
+                            <span>From</span>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="row">
+                            <input style="height: 35px;" type="date" class="rounded-2" />
+                        </div>
+                    </div>
+
+                    <div class="col-1 mt-1 text-center">
+                        <div class="row">
+                            <span>To</span>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="row">
+                            <input style="height: 35px;" type="date" class="rounded-2" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5 offset-lg-4 mb-3">
+                <div class="row">
+                    <button class="rounded-4"
+                        style="font-family: 'Quicksand'; font-weight: bold; background-color: rgb(86, 86, 255); color: white; border: none; height: 45px; font-size: 20px;">Search</button>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-10 offset-1 mt-4">
+                <div class="row">
+                    <div style="border-bottom: solid 2px darkgray;" class="col-12 col-lg-4 text-center">
+                        <div class="row">
+                            <h2>SELLING HISTORY</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mt-5 mb-5">
+                    <div class="row">
+                        <table cellpadding="10">
+                            <tr style="border-bottom: solid 1px;">
+                                <th>Date</th>
+                                <th>Item name</th>
+                                <th>QTY</th>
+                                <th>Total Price</th>
+                                <th>Track Number</th>
+                                <th></th>
+                            </tr>
+
+                            <tr>
+                                <td>6/7/2023</td>
+                                <td>Laptops</td>
+                                <td>10</td>
+                                <td>250,000</td>
+                                <td>#123456789</td>
+                                <td><a href="#">View details</a></td>
+                            </tr>
+
+                            <tr style="background-color: rgb(159, 159, 159);">
+                                <td>5/4/2023</td>
+                                <td>Headphones</td>
+                                <td>25</td>
+                                <td>5,000</td>
+                                <td>#789456123</td>
+                                <td><a href="#">View details</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>6/7/2022</td>
+                                <td>Mobile Phones</td>
+                                <td>5</td>
+                                <td>500,000</td>
+                                <td>#105568750</td>
+                                <td><a href="#">View details</a></td>
+                            </tr>
+
+                            <tr style="background-color: rgb(159, 159, 159);">
+                                <td>10/8/2021</td>
+                                <td>Tabs</td>
+                                <td>5</td>
+                                <td>250,000</td>
+                                <td>#105568750</td>
+                                <td><a href="#">View details</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--content-->
+
+            <!--footer-->
+            <div style="border-top: solid 1px darkgray;" class="col-12 mt-2">
+                <div class="row">
+                    <div class="col-2 offset-1 mt-3">
+                        <div class="row">
+                            <img src="resources/newTechTransparent.png" />
+                        </div>
+
+                        <div class="mt-3">
+                            <span>No.1, R.A.de. Mel Mawatha,Colombo03</span>
+                            <br />
+                            <span>+94760621337 / +94710801038</span>
+                            <br />
+                            <span>support@newtech.lk</span>
+                        </div>
+                    </div>
+
+                    <div class="offset-1 col-3 text-center">
+                        <div class="row">
+                            <div class="col-12 mt-4">
+                                <div class="row">
+                                    <h4>SHOPPING WITH US</h4>
+                                </div>
+
+                                <div class="mt-1 text-center">
+                                    <p class="btn2">About Us</p>
+                                    <p class="btn2">Gift Vouchers</p>
+                                    <p class="btn2">FAQs</p>
+                                    <p class="btn2">Privacy Policy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 offset-1 text-center">
+                        <div class="row">
+                            <div class="col-12 mt-4">
+                                <div class="row">
+                                    <h4>SUPPORT SERVICES</h4>
+                                </div>
+
+                                <div class="mt-1 text-center">
+                                    <p class="btn2">My Account</p>
+                                    <p class="btn2">After Sales Service</p>
+                                    <p class="btn2">Corporate Sales</p>
+                                    <p class="btn2">Contact Us</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-none d-lg-block">
+                        <p style="font-weight: bold;font-size: 17px;" class="text-center">&copy;
+                            2023 newTech.lk || All
+                            rights
+                            Reserved</p>
+                    </div>
+                </div>
+            </div>
+            <!--footer-->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+</body>
+
+</html>

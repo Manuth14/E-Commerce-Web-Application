@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>newTech - MANAGE PRODUCTS</title>
+    <link rel="icon" href="resources/newTechIcon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+</head>
+
+<body>
+    <div class="container-fluid mt-3">
+        <div class="row">
+
+            <!--header-->
+            <div style="border-bottom: solid 1px darkgray;" class="col-12">
+                <div class="row">
+                    <div class="col-12 col-lg-2 offset-lg-5">
+                        <img class="offset-1" width="150" src="resources/newTechTransparent.png" />
+                        <p style="font-family: 'Quicksand'; font-size: 19px;" class="mt-2">Your Trusted Gadget Store</p>
+                    </div>
+
+                    <div class="col-1 offset-4 mt-4 dropdown">
+                        <div class="row">
+                            <button style="border: none; background-color:white;" class="dropdown-toggle"
+                                data-bs-toggle="dropdown"><img width="35" src="resources/my_profile.svg" /></button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="adminLogin.html">Sign In / Sign Up</a></li>
+                                <li><a class="dropdown-item" href="#">My Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--header-->
+
+            <!--content-->
+            <div class="col-12 mt-4 col-lg-2">
+                <div class="row">
+                    <div style="border-right: solid 2px;" class="col-12">
+                        <div class="row">
+                            <button class="btn5" onclick="document.location='adminPanel.html'"
+                                style="border: none; background-color: white;">Dashboard</button>
+                        </div>
+                    </div>
+
+                    <div style="border-right: solid 2px;" class="col-12 mt-5">
+                        <div class="row">
+                            <button class="btn5" onclick="document.location='productAdding&Update.html'"
+                                style="border: none; background-color: white;">Product
+                                Adding</button>
+                        </div>
+                    </div>
+
+                    <div style="border-right: solid 2px;" class="col-12 mt-5">
+                        <div class="row">
+                            <button class="btn5" onclick="document.location='productAdding&Update.html'"
+                                style="border: none; background-color: white;">Product
+                                Update</button>
+                        </div>
+                    </div>
+
+                    <div style="border-right: solid 2px;" class="col-12 mt-5">
+                        <div class="row">
+                            <button class="btn5" onclick="document.location='manageProducts.html'"
+                                style="border: none; background-color: white;">Manage
+                                Products</button>
+                        </div>
+                    </div>
+
+                    <div style="border-right: solid 2px; border-bottom: solid 2px;" class="col-12 mt-5 mb-3">
+                        <div class="row">
+                            <button class="btn5 mb-3" onclick="document.location='manageProducts.html'"
+                                style="border: none; background-color: white;">Manage
+                                Users</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--content-->
+
+            <!--manageProducts-->
+            <div class="col-10" id="productbox">
+                <div class="row">
+                    <div class="col-6 offset-1 mt-4">
+                        <div class="row">
+                            <div class="input-group">
+                                <input type="search" class="form-control" placeholder="Search for products">
+                                <div class="input-group-append">
+                                    <button class="btn" style="background-color: #f26522; border-color:#f26522 ">
+                                        <img src="resources/search.png" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 offset-1 mt-4">
+                        <div class="row">
+                            <button class="btnu" onclick="Users();">Users</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 offset-lg-1 mt-5">
+                    <div class="row">
+                        <div style="border-bottom: solid 2px darkgray;" class="col-12 col-lg-4 text-center">
+                            <div class="row">
+                                <h2>PRODUCTS</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-4 mb-5">
+                        <div class="row">
+                            <table cellpadding="10">
+                                <tr style="border-bottom: solid 1px;">
+                                    <th>Product ID:</th>
+                                    <th>Product Name</th>
+                                    <th>Price</th>
+                                    <th>Track Number</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+
+                                <tr style="background-color: rgb(165, 255, 225);">
+                                    <td>SO-1254793552</td>
+                                    <td>Laptops</td>
+                                    <td>25,000</td>
+                                    <td>#123456789</td>
+                                    <td><button
+                                            style="background-color: green; border: none; color: white; border-radius: 5px;">Add</button>
+                                    </td>
+                                    <td><button
+                                            style="background-color: red; border: none; color: white; border-radius: 5px;">Delete</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>EN-9517532581</td>
+                                    <td>Printers</td>
+                                    <td>10,000</td>
+                                    <td>#789456123</td>
+                                    <td><button
+                                            style="background-color: green; border: none; color: white; border-radius: 5px;">Add</button>
+                                    </td>
+                                    <td><button
+                                            style="background-color: red; border: none; color: white; border-radius: 5px;">Delete</button>
+                                    </td>
+                                </tr>
+
+                                <tr style="background-color: rgb(165, 255, 225);">
+                                    <td>PU-7419638524</td>
+                                    <td>Power Banks</td>
+                                    <td>50,000</td>
+                                    <td>#105568750</td>
+                                    <td><button
+                                            style="background-color: green; border: none; color: white; border-radius: 5px;">Add</button>
+                                    </td>
+                                    <td><button
+                                            style="background-color: red; border: none; color: white; border-radius: 5px;">Delete</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>LR-0710803810</td>
+                                    <td>Earphones</td>
+                                    <td>50,000</td>
+                                    <td>#9630123589</td>
+                                    <td><button
+                                            style="background-color: green; border: none; color: white; border-radius: 5px;">Add</button>
+                                    </td>
+                                    <td><button
+                                            style="background-color: red; border: none; color: white; border-radius: 5px;">Delete</button>
+                                    </td>
+                                </tr>
+
+                                <tr style="background-color: rgb(165, 255, 225);">
+                                    <td>NO-0760621337</td>
+                                    <td>Mobile Phones</td>
+                                    <td>50,000</td>
+                                    <td>#500258159</td>
+                                    <td><button
+                                            style="background-color: green; border: none; color: white; border-radius: 5px;">Add</button>
+                                    </td>
+                                    <td><button
+                                            style="background-color: red; border: none; color: white; border-radius: 5px;">Delete</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--manageProducts-->
+
+
+            <!--manageUsers-->
+            <div class="col-10 d-none" id="userbox">
+                <div class="row">
+                    <div class="col-6 offset-1 mt-4">
+                        <div class="row">
+                            <div class="input-group">
+                                <input type="search" class="form-control" placeholder="Search for users">
+                                <div class="input-group-append">
+                                    <button class="btn" style="background-color: #f26522; border-color:#f26522 ">
+                                        <img src="resources/search.png" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 offset-1 mt-4">
+                        <div class="row">
+                            <button class="btnu" onclick="Users();">Products</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 offset-lg-1 mt-5">
+                    <div class="row">
+                        <div style="border-bottom: solid 2px darkgray;" class="col-12 col-lg-4 text-center">
+                            <div class="row">
+                                <h2>Users</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-4 mb-5">
+                        <div class="row">
+                            <table cellpadding="10">
+                                <tr style="border-bottom: solid 1px;">
+                                    <th>User ID:</th>
+                                    <th>User Name</th>
+                                    <th>Email</th>
+                                    <th>Mobile No:</th>
+                                    <th></th>
+                                </tr>
+
+                                <tr style="background-color: rgb(165, 253, 255);">
+                                    <td>US-1254793552</td>
+                                    <td>Arnold Perera</td>
+                                    <td>arnold21@gmail.com</td>
+                                    <td>0723456789</td>
+                                    <td><button
+                                            style="background-color: red; border: none; color: white; border-radius: 5px;">Delete</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>US-9517532581</td>
+                                    <td>Amarabandu Rpasinghe</td>
+                                    <td>amarabandu75@gmail.com</td>
+                                    <td>0789456123</td>
+                                    <td><button
+                                            style="background-color: red; border: none; color: white; border-radius: 5px;">Delete</button>
+                                    </td>
+                                </tr>
+
+                                <tr style="background-color: rgb(165, 253, 255);">
+                                    <td>US-7419638524</td>
+                                    <td>Saman Kumara</td>
+                                    <td>saman.kumara543@gmail.com</td>
+                                    <td>0705568750</td>
+                                    <td><button
+                                            style="background-color: red; border: none; color: white; border-radius: 5px;">Delete</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>US-0710803810</td>
+                                    <td>Mendis Perera</td>
+                                    <td>mendis55@yahoo.com</td>
+                                    <td>07630123589</td>
+                                    <td><button
+                                            style="background-color: red; border: none; color: white; border-radius: 5px;">Delete</button>
+                                    </td>
+                                </tr>
+
+                                <tr style="background-color: rgb(165, 253, 255);">
+                                    <td>US-0760621337</td>
+                                    <td>Kasun Silva</td>
+                                    <td>kasun.silva@outlook.com</td>
+                                    <td>0750025815</td>
+                                    <td><button
+                                            style="background-color: red; border: none; color: white; border-radius: 5px;">Delete</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--manageUsers-->
+
+            <!--footer-->
+            <div style="border-top: solid 1px darkgray;" class="col-12 mt-2">
+                <div class="row">
+                    <div class="col-2 offset-1 mt-3">
+                        <div class="row">
+                            <img src="resources/newTechTransparent.png" />
+                        </div>
+
+                        <div class="mt-3">
+                            <span>No.1, R.A.de. Mel Mawatha,Colombo03</span>
+                            <br />
+                            <span>+94760621337 / +94710801038</span>
+                            <br />
+                            <span>support@newtech.lk</span>
+                        </div>
+                    </div>
+
+                    <div class="offset-1 col-3 text-center">
+                        <div class="row">
+                            <div class="col-12 mt-4">
+                                <div class="row">
+                                    <h4>SHOPPING WITH US</h4>
+                                </div>
+
+                                <div class="mt-1 text-center">
+                                    <p class="btn2">About Us</p>
+                                    <p class="btn2">Gift Vouchers</p>
+                                    <p class="btn2">FAQs</p>
+                                    <p class="btn2">Privacy Policy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 offset-1 text-center">
+                        <div class="row">
+                            <div class="col-12 mt-4">
+                                <div class="row">
+                                    <h4>SUPPORT SERVICES</h4>
+                                </div>
+
+                                <div class="mt-1 text-center">
+                                    <p class="btn2">My Account</p>
+                                    <p class="btn2">After Sales Service</p>
+                                    <p class="btn2">Corporate Sales</p>
+                                    <p class="btn2">Contact Us</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-none d-lg-block">
+                        <p style="font-weight: bold;font-size: 17px;" class="text-center">&copy;
+                            2023 newTech.lk || All
+                            rights
+                            Reserved</p>
+                    </div>
+                </div>
+            </div>
+            <!--footer-->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+
+</body>
+
+</html>

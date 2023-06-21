@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>newTech - CART</title>
+    <link rel="icon" href="resources/newTechIcon.png">
+
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+
+            <!--header-->
+            <div style="border-bottom: solid 1px darkgray;" class="col-12">
+                <div class="row">
+                    <div class="col-12 col-lg-2">
+                        <img class="offset-1" width="150" src="resources/newTechTransparent.png" />
+                        <p style="font-family: 'Quicksand'; font-size: 19px;" class="mt-2">Your Trusted Gadget Store</p>
+                    </div>
+
+                    <div class="col-6 offset-1 mt-4">
+                        <div class="row">
+                            <div class="input-group">
+                                <input type="search" class="form-control" placeholder="Search for products">
+                                <div class="input-group-append">
+                                    <button class="btn" style="background-color: #f26522; border-color:#f26522 ">
+                                        <img src="resources/search.png" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-1 mt-4">
+                        <div class="row">
+                            <button style="border: none; background-color:white;"><img width="35"
+                                    src="resources/compare.svg" /></button>
+                        </div>
+                    </div>
+
+                    <div class="col-1 mt-4">
+                        <div class="row">
+                            <button onclick="document.location='cart.html'"
+                                style="border: none; background-color:white;"><img width="35"
+                                    src="resources/cart.svg" /></button>
+                        </div>
+                    </div>
+
+                    <div class="col-1 mt-4 dropdown">
+                        <div class="row">
+                            <button style="border: none; background-color:white;" class="dropdown-toggle"
+                                data-bs-toggle="dropdown"><img width="35" src="resources/my_profile.svg" /></button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="signIn.html">Sign In / Sign Up</a></li>
+                                <li><a class="dropdown-item" href="#">My Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--header-->
+
+            <!--headerMiddle-->
+            <div class="col-12 mt-2">
+                <div class="row">
+                    <div class="col-12 col-lg-3 mt-1">
+                        <div class="row">
+                            <div class="dropdown ">
+                                <button style="font-weight:bold; font-family:'Cambria';"
+                                    class="col-12 btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                                    All Products
+                                </button>
+                                <ul class="col-11 mx-1 text-center dropdown-menu">
+                                    <li><a style="color: #f26522; font-weight: bold;" class="dropdown-item btn1">CRAZY
+                                            OFFERS</a></li>
+                                    <li><a style="color: red; font-weight: bold;" class="dropdown-item btn1">HOT DEALS
+                                            <img src="resources/fire.svg" /></a></li>
+                                    <li><a style="font-family: 'honey';" class="dropdown-item btn1">GIFT VOUCHERS</a>
+                                    </li>
+                                    <li><a style="font-family: 'honey';" class="dropdown-item btn1">PROJCETORS</a></li>
+                                    <li><a style="font-family: 'honey';" class="dropdown-item btn1">APPLE STORE</a></li>
+                                    <li><a style="font-family: 'honey';" class="dropdown-item btn1">BRANDS</a></li>
+                                    <li><a style="font-family: 'honey';" class="dropdown-item btn1">SMARTWATCHES</a>
+                                    </li>
+                                    <li><a style="font-family: 'honey';" class="dropdown-item btn1">EARPHONES &
+                                            HEADPHONES</a></li>
+                                    <li><a style="font-family: 'honey';" class="dropdown-item btn1">SPEAKERS</a></li>
+                                    <li><a style="font-family: 'honey';" class="dropdown-item btn1">MOBILE PHONES</a>
+                                    </li>
+                                    <li><a style="font-family: 'honey';" class="dropdown-item btn1">MOBILE PHONE
+                                            ACCESORIES</a></li>
+                                    <li><a style="font-family: 'honey';" class="dropdown-item btn1">TABS</a></li>
+                                    <li><a style="font-family: 'honey';" class="dropdown-item btn1">SMART DEVICES</a>
+                                    </li>
+                                    <li><a style="font-family: 'honey';" class="dropdown-item btn1">BLUETOOTH
+                                            DEVICES</a></li>
+                                    <li><a style="font-family: 'honey';" class="dropdown-item btn1">POWER BANKS</a></li>
+                                    <li><a style="font-family: 'honey';" class="dropdown-item btn1">CAMERAS</a></li>
+                                    <li><a style="font-family: 'honey';" class="dropdown-item btn1">STORAGE DEVICES</a>
+                                    </li>
+                                    <li><a style="font-family: 'honey';" class="dropdown-item btn1">OTHER
+                                            ACCESSORIES</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 text-center">
+                        <div class="row">
+                            <ul class="list-inline mt-2">
+                                <button class="col-2 bg-white list" style="border: none; font-weight:bold;"
+                                    onclick="document.location='home.html'">
+                                    <li class="list-inline-item">Home</li>
+                                </button>
+                                <button class="col-2 bg-white list" style="border: none; font-weight:bold;" onclick="document.location='purchasedHistory.html'">
+                                    <li class="list-inline-item">My Orders</li>
+                                </button>
+                                <button onclick="document.location='watchlist.html'" class="col-2 bg-white list"
+                                    style="border: none; font-weight:bold;">
+                                    <li class="list-inline-item">Watchlist</li>
+                                </button>
+                                <button class="col-3 bg-white list" style="border: none; font-weight:bold;"
+                                    onclick="document.location='advancedSearch.html'">
+                                    <li class="list-inline-item">Advanced Search</li>
+                                </button>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 d-none d-lg-block text-center">
+                        <div class="row">
+                            <span class="mt-2"
+                                style="font-weight:bold; font-family: 'Quicksand'; color: blue;">Clearance Up
+                                to 30%
+                                off</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--headerMiddle-->
+
+            <!--cart-->
+            <div class="col-12 col-lg-8 mt-5 offset-lg-3">
+                <div class="row">
+                    <div class="col-12">
+                        <input type="radio" />
+                        <span>Select all items</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-8 mt-4 offset-lg-3">
+                <div class="row">
+                    <div class="col-1">
+                        <input type="radio" />
+                    </div>
+
+                    <div class="col-5 col-lg-2">
+                        <div class="row">
+                            <img src="resources/svp-ap.png" />
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 offset-lg-1">
+                        <div class="row">
+                            <span>Product Name :</span>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-5">
+                                    <span>Select Colour :</span>
+                                </div>
+
+                                <div class="col-5">
+                                    <div class="row">
+                                        <input class="col-3" type="color" />
+                                    </div>
+                                </div>
+
+                                <div class=" col-12">
+                                    <div class="row">
+                                        <span>Product Price :</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-10">
+                                    <div class="row">
+                                        <span>Dilivery fee : Rs.200</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-2">
+                                    <div class="row">
+                                        <input type="number" value="1" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="col-10 offset-1 mt-3" />
+
+                    <div class="col-10 offset-1 mt-2">
+                        <div class="row">
+                            <div class="col-4 offset-1">
+                                <div class="row">
+                                    <button class="btn-bn1 rounded" onclick="document.location='invoice.html'">BUY NOW</button>
+                                </div>
+                            </div>
+
+                            <div class="col-4 offset-1">
+                                <div class="row">
+                                    <button class="btn-dl1 rounded">DELETE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5">
+                        <div class="row">
+                            <div class="col-1">
+                                <input type="radio" />
+                            </div>
+                            <div class="col-5 col-lg-2">
+                                <div class="row">
+                                    <img src="resources/svp-ap.png" />
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-4 offset-lg-1">
+                                <div class="row">
+                                    <span>Product Name :</span>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <span>Select Colour :</span>
+                                        </div>
+
+                                        <div class="col-5">
+                                            <div class="row">
+                                                <input class="col-3" type="color" />
+                                            </div>
+                                        </div>
+
+                                        <div class=" col-12">
+                                            <div class="row">
+                                                <span>Product Price :</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-10">
+                                            <div class="row">
+                                                <span>Dilivery fee : Rs.200</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <input type="number" value="1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="col-10 offset-1 mt-3" />
+
+                            <div class="col-10 offset-1">
+                                <div class="row">
+                                    <div class="col-4 offset-1">
+                                        <div class="row">
+                                            <button class="btn-bn1 rounded" onclick="document.location='invoice.html'">BUY NOW</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4 offset-1">
+                                        <div class="row">
+                                            <button class="btn-dl1 rounded">DELETE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--cart-->
+
+            <!--footer-->
+            <div style="border-top: solid 1px darkgray;" class="col-12 mt-5">
+                <div class="row">
+                    <div class="col-2 offset-1 mt-3">
+                        <div class="row">
+                            <img src="resources/newTechTransparent.png" />
+                        </div>
+
+                        <div class="mt-3">
+                            <span>No.1, R.A.de. Mel Mawatha,Colombo03</span>
+                            <br />
+                            <span>+94760621337 / +94710801038</span>
+                            <br />
+                            <span>support@newtech.lk</span>
+                        </div>
+                    </div>
+
+                    <div class="offset-1 col-3 text-center">
+                        <div class="row">
+                            <div class="col-12 mt-4">
+                                <div class="row">
+                                    <h4>SHOPPING WITH US</h4>
+                                </div>
+
+                                <div class="mt-1 text-center">
+                                    <p class="btn2">About Us</p>
+                                    <p class="btn2">Gift Vouchers</p>
+                                    <p class="btn2">FAQs</p>
+                                    <p class="btn2">Privacy Policy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 offset-1 text-center">
+                        <div class="row">
+                            <div class="col-12 mt-4">
+                                <div class="row">
+                                    <h4>SUPPORT SERVICES</h4>
+                                </div>
+
+                                <div class="mt-1 text-center">
+                                    <p class="btn2">My Account</p>
+                                    <p class="btn2">After Sales Service</p>
+                                    <p class="btn2">Corporate Sales</p>
+                                    <p class="btn2">Contact Us</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 d-none d-lg-block">
+                <p style="font-weight: bold;font-size: 17px;" class="text-center">&copy; 2023 newTech.lk || All
+                    rights
+                    Reserved</p>
+            </div>
+            <!--footer-->
+
+        </div>
+    </div>
+
+    <script src="bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

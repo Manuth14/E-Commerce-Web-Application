@@ -1,0 +1,221 @@
+.logo {
+    background-image: url("resources/newTechTransparent.png");
+    height: 80px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.background {
+    background-image: url("resources/5865.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("fonts/Quicksand-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Honey";
+    src: url("fonts/HoneyScript-Light.ttf");
+}
+
+.title01 {
+     font-family: "Honey";
+     font-size: 30px;
+     letter-spacing: 3px;
+}
+
+.title02 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Quicksand";
+}
+
+.list {
+    font-size: 18px;
+    font-family: "Quicksand";
+}
+
+.list:hover {
+    color: blue;
+}
+
+.poster-img-1 {
+    height: 570px;
+    background-repeat: no-repeat;
+}
+
+.btn1:hover {
+    background-color: rgb(198, 198, 198);
+}
+
+.btn3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: cornflowerblue;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 3px;
+}
+
+.btn2:hover {
+
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.pr1 {
+    color: orange;
+    font-weight: bold;
+}
+
+.btn-bn1 {
+    background-color: white;
+    height: 35px;
+}
+
+.btn-bn1:hover {
+    color: white;
+    background-color: blue;
+    border: none;
+    font-weight: bold;
+    height: 35px;
+}
+
+.btn-ac1 {
+    background-color: white;
+    height: 35px;
+}
+
+.btn-ac1:hover {
+    color: white;
+    background-color: green;
+    border: none;
+    font-weight: bold;
+    height: 35px;
+}
+
+.btn-wl1 {
+    background-color: white;
+    height: 35px;
+}
+
+.btn-wl1:hover {
+    color: white;
+    background-color: red;
+    border: none;
+    font-weight: bold;
+    height: 35px;
+}
+
+.btn-dl1 {
+    background-color: white;
+    height: 35px;
+}
+
+.btn-dl1:hover {
+    color: white;
+    background-color: red;
+    border: none;
+    font-weight: bold;
+    height: 35px;
+}
+
+.btn4:hover {
+    background-color: blue;
+    color: white;
+}
+
+.a1{
+    color: black;
+}
+
+.a1:hover {
+    color: red;
+}
+
+.btn5 {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Gill sons';
+}
+.btn5:hover {
+    color: blue;
+    font-weight: bolder;
+}
+
+.d1 {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 65px;
+}
+
+.ui1 {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 45px;
+    background-color: rgb(95, 95, 255);
+    color: white;
+    border: none;
+}
+
+.ui1:hover {
+    background-color: blue;
+}
+
+.btnap {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 45px;
+    background-color: rgb(95, 255, 124);
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+.btnap:hover {
+    background-color: green;
+    color: white;
+}
+
+.btnup {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 45px;
+    background-color: rgb(255, 95, 95);
+    color: white;
+    border: none;
+}
+
+.btnup:hover {
+    background-color: red;
+}
+
+.btnu {
+    height: 45px;
+    font-family: 'Gill Sans';
+    font-size: 20px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btnu:hover {
+    background-color: rgb(95, 95, 248);
+    color: white;
+    border: none;
+}
